@@ -13,7 +13,7 @@ const Images = () => {
       </h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 my-10 max-w-5xl mx-auto px-4">
         {isLoading ? (
-          <Loader item={10} />
+          <Loader item={response.length} />
         ) : (
           response.map((data, key) => <Image key={key} data={data} />)
         )}
